@@ -1,0 +1,35 @@
+{
+  "httpProxy": true,
+  "defaultDatabase": "redis",
+  "log": {
+    "level": "debug",
+    "file": "logs/app.log",
+    "fileAsJson": true,
+    "consoleAsJson": true,
+    "console": false
+  },
+  "server": {
+    "address": "127.0.0.1",
+    "port": "3910",
+    "ssl": {
+      "enabled": false
+    }
+  },
+  "databases": {
+    "redis": {
+      "comment": "optional keys are marked with underscore - remove underscore to set value",
+      "type": "redis",
+      "server": "localhost",
+      "keySeparator": "/",
+      "port": "6379",
+      "password": "",
+      "_sentinels": "",
+      "_sentinelGroup": "",
+      "_sentinelPassword": "",
+      "_database": "0",
+      "_maxRetryConnectionTime": 0,
+      "_maxRetryAttempts": 0,
+      "_outdatedSessionsIntervalInSeconds": 0
+    }
+  }
+}

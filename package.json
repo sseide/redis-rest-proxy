@@ -1,0 +1,32 @@
+{
+  "name": "redis-rest-proxy",
+  "description": "Small NodeJS app to proxy HTTP request to a redis server to get and set data",
+  "version": "0.0.1",
+  "homepage": "https://gitlab.devops.telekom.de/cia/art-frag-magenta/dsa/omega/redis-rest-proxy",
+  "license": "UNLICENSED",
+  "keywords": ["node", "redis", "proxy", "rest"],
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "test": "echo 'no tests'"
+  },
+  "engines": {
+    "node": ">16.0"
+  },
+  "author": {
+    "name": "Stefan Seide",
+    "email": "stefan@trilobyte.de"
+  },
+  "dependencies": {
+    "config": "^3.3.10",
+    "express": "^4.18.2",
+    "ioredis": "^5.3.2"
+  },
+  "devDependencies": {
+  },
+  "repository": {
+    "url": "https://gitlab.devops.telekom.de/cia/art-frag-magenta/dsa/omega/redis-rest-proxy.git",
+    "type": "git"
+  },
+  "publishConfig": {}
+}
