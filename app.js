@@ -29,10 +29,10 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: false}));
 
 app.get('/', (req, res) => {
-  res.send('Hello World!')
+  res.send('Sit down! Have a scone. Make yourself at home.')
 });
 
-app.post('/:connection/command', (req, res) => {
+app.post('/proxy/:connection/command', (req, res) => {
   const con = req.params.connection;
   if (con && config.has(`databases.${con}`)) {
     executeRedisCommand(con, req, res);
@@ -42,7 +42,7 @@ app.post('/:connection/command', (req, res) => {
   }
 });
 
-app.post('/command', (req, res) => {
+app.post('/proxy/command', (req, res) => {
   try {
     executeRedisCommand(config.get('defaultDatabase'), req, res);
   }
@@ -82,7 +82,7 @@ const getConnection = function(name){
  * production interface may be overwritten with Env-Var 'LISTEN_ADDRESS'
  */
 let httpServer = null;
-let logStartupFunc = null;
+let logStartupFunc;
 if (config.has('server.ssl.enabled') && config.get('server.ssl.enabled')) {
   const https = require('https');
   const fs = require('fs');

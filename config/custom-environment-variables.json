@@ -1,0 +1,16 @@
+{
+  "log": {
+    "level": "LOG_LEVEL"
+  },
+  "server": {
+    "address": "LISTEN_ADDRESS",
+    "port": "PORT"
+  },
+  "databases": {
+    "redis": {
+      "server": "REDIS_SERVER",
+      "port": "REDIS_PORT",
+      "password": "REDIS_PASSWORD"
+    }
+  }
+}

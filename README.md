@@ -1,5 +1,7 @@
 # HTTP to Redis Proxy
 
+## WORK-IN-PROGRESS
+
 Small proxy application to convert HTTP requests onto Redis commands for configured backend Redis servers.
 All Redis server must be preconfigured to allow access via HTTP.
 

@@ -6,7 +6,7 @@
     "file": "logs/app.log",
     "fileAsJson": true,
     "consoleAsJson": true,
-    "console": false
+    "console": true
   },
   "server": {
     "address": "127.0.0.1",
@@ -20,7 +20,6 @@
       "comment": "optional keys are marked with underscore - remove underscore to set value",
       "type": "redis",
       "server": "localhost",
-      "keySeparator": "/",
       "port": "6379",
       "password": "",
       "_sentinels": "",
