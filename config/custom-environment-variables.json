@@ -10,7 +10,11 @@
     "redis": {
       "server": "REDIS_SERVER",
       "port": "REDIS_PORT",
-      "password": "REDIS_PASSWORD"
+      "password": "REDIS_PASSWORD",
+      "sentinels": "SENTINEL_LIST",
+      "sentinelGroup": "SENTINEL_GROUP",
+      "sentinelPassword": "SENTINEL_PASSWORD",
+      "database": "REDIS_DATABASE"
     }
   }
 }
