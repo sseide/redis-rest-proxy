@@ -1,7 +1,7 @@
 {
   "name": "redis-rest-proxy",
   "description": "Small NodeJS app to proxy HTTP request to a redis server to get and set data",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "homepage": "https://github.com/sseide/redis-rest-proxy",
   "license": "MIT",
   "keywords": ["node", "redis", "proxy", "rest"],
@@ -19,9 +19,9 @@
     "email": "sseide@trilobyte.de"
   },
   "dependencies": {
-    "config": "^3.3.10",
-    "express": "^4.18.2",
-    "ioredis": "^5.3.2"
+    "config": "3.3.11",
+    "express": "4.19.2",
+    "ioredis": "5.4.1"
   },
   "devDependencies": {
   },
