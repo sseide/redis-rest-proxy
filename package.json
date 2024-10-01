@@ -1,15 +1,21 @@
 {
   "name": "redis-rest-proxy",
   "description": "Small NodeJS app to proxy HTTP request to a redis server to get and set data",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "homepage": "https://github.com/sseide/redis-rest-proxy",
   "license": "MIT",
-  "keywords": ["node", "redis", "proxy", "rest"],
+  "keywords": [
+    "node",
+    "redis",
+    "proxy",
+    "rest"
+  ],
   "main": "app.js",
   "scripts": {
     "start": "node app.js",
     "test": "echo 'no tests'",
-    "update-version": "./update-version.sh"
+    "update-version": "./update-version.sh",
+    "sbom": "cyclonedx-npm --omit optional --mc-type application --output-format json --output-file ./sbom.json"
   },
   "engines": {
     "node": ">16.0"
@@ -19,11 +25,12 @@
     "email": "sseide@trilobyte.de"
   },
   "dependencies": {
-    "config": "3.3.11",
-    "express": "4.19.2",
+    "config": "3.3.12",
+    "express": "4.21.0",
     "ioredis": "5.4.1"
   },
   "devDependencies": {
+    "@cyclonedx/bom": "^4.1.0"
   },
   "repository": {
     "url": "https://github.com/sseide/redis-rest-proxy",
