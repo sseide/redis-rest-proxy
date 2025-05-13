@@ -3,9 +3,9 @@
   "bomFormat": "CycloneDX",
   "specVersion": "1.6",
   "version": 1,
-  "serialNumber": "urn:uuid:ea9025ce-516a-49c4-85f8-afe9dbea4f42",
+  "serialNumber": "urn:uuid:0722c3ec-a1df-49aa-ba76-f1b4e11b0f3a",
   "metadata": {
-    "timestamp": "2025-05-13T10:01:02.566Z",
+    "timestamp": "2025-05-13T10:04:29.633Z",
     "tools": {
       "components": [
         {
@@ -82,8 +82,8 @@
     "component": {
       "type": "application",
       "name": "redis-rest-proxy",
-      "version": "0.0.3",
-      "bom-ref": "redis-rest-proxy@0.0.3",
+      "version": "0.0.4",
+      "bom-ref": "redis-rest-proxy@0.0.4",
       "author": "S. Seide",
       "description": "Small NodeJS app to proxy HTTP request to a redis server to get and set data",
       "licenses": [
@@ -94,7 +94,7 @@
           }
         }
       ],
-      "purl": "pkg:npm/redis-rest-proxy@0.0.3?vcs_url=git%2Bhttps%3A%2F%2Fgithub.com%2Fsseide%2Fredis-rest-proxy.git",
+      "purl": "pkg:npm/redis-rest-proxy@0.0.4?vcs_url=git%2Bhttps%3A%2F%2Fgithub.com%2Fsseide%2Fredis-rest-proxy.git",
       "externalReferences": [
         {
           "url": "git+https://github.com/sseide/redis-rest-proxy.git",
@@ -4407,7 +4407,7 @@
   ],
   "dependencies": [
     {
-      "ref": "redis-rest-proxy@0.0.3",
+      "ref": "redis-rest-proxy@0.0.4",
       "dependsOn": [
         "@cyclonedx/bom@4.1.0",
         "config@3.3.12",

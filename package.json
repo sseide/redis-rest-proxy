@@ -1,7 +1,7 @@
 {
   "name": "redis-rest-proxy",
   "description": "Small NodeJS app to proxy HTTP request to a redis server to get and set data",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "homepage": "https://github.com/sseide/redis-rest-proxy",
   "license": "MIT",
   "keywords": [
