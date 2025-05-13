@@ -1,61 +1,84 @@
 {
-  "$schema": "http://cyclonedx.org/schema/bom-1.4.schema.json",
+  "$schema": "http://cyclonedx.org/schema/bom-1.6.schema.json",
   "bomFormat": "CycloneDX",
-  "specVersion": "1.4",
+  "specVersion": "1.6",
   "version": 1,
-  "serialNumber": "urn:uuid:eebf0e82-376a-44db-b650-cb9257e312c1",
+  "serialNumber": "urn:uuid:ea9025ce-516a-49c4-85f8-afe9dbea4f42",
   "metadata": {
-    "timestamp": "2024-10-01T08:48:48.470Z",
-    "tools": [
-      {
-        "name": "npm",
-        "version": "10.8.2"
-      },
-      {
-        "vendor": "@cyclonedx",
-        "name": "cyclonedx-npm",
-        "version": "1.19.3",
-        "externalReferences": [
-          {
-            "url": "git+https://github.com/CycloneDX/cyclonedx-node-npm.git",
-            "type": "vcs",
-            "comment": "as detected from PackageJson property \"repository.url\""
-          },
-          {
-            "url": "https://github.com/CycloneDX/cyclonedx-node-npm#readme",
-            "type": "website",
-            "comment": "as detected from PackageJson property \"homepage\""
-          },
-          {
-            "url": "https://github.com/CycloneDX/cyclonedx-node-npm/issues",
-            "type": "issue-tracker",
-            "comment": "as detected from PackageJson property \"bugs.url\""
-          }
-        ]
-      },
-      {
-        "vendor": "@cyclonedx",
-        "name": "cyclonedx-library",
-        "version": "6.11.0",
-        "externalReferences": [
-          {
-            "url": "git+https://github.com/CycloneDX/cyclonedx-javascript-library.git",
-            "type": "vcs",
-            "comment": "as detected from PackageJson property \"repository.url\""
-          },
-          {
-            "url": "https://github.com/CycloneDX/cyclonedx-javascript-library#readme",
-            "type": "website",
-            "comment": "as detected from PackageJson property \"homepage\""
-          },
-          {
-            "url": "https://github.com/CycloneDX/cyclonedx-javascript-library/issues",
-            "type": "issue-tracker",
-            "comment": "as detected from PackageJson property \"bugs.url\""
-          }
-        ]
-      }
-    ],
+    "timestamp": "2025-05-13T10:01:02.566Z",
+    "tools": {
+      "components": [
+        {
+          "type": "application",
+          "name": "npm",
+          "version": "10.8.2"
+        },
+        {
+          "type": "application",
+          "name": "cyclonedx-npm",
+          "group": "@cyclonedx",
+          "version": "3.0.0",
+          "author": "Jan Kowalleck",
+          "description": "Create CycloneDX Software Bill of Materials (SBOM) from NPM projects.",
+          "licenses": [
+            {
+              "license": {
+                "id": "Apache-2.0"
+              }
+            }
+          ],
+          "externalReferences": [
+            {
+              "url": "git+https://github.com/CycloneDX/cyclonedx-node-npm.git",
+              "type": "vcs",
+              "comment": "as detected from PackageJson property \"repository.url\""
+            },
+            {
+              "url": "https://github.com/CycloneDX/cyclonedx-node-npm#readme",
+              "type": "website",
+              "comment": "as detected from PackageJson property \"homepage\""
+            },
+            {
+              "url": "https://github.com/CycloneDX/cyclonedx-node-npm/issues",
+              "type": "issue-tracker",
+              "comment": "as detected from PackageJson property \"bugs.url\""
+            }
+          ]
+        },
+        {
+          "type": "library",
+          "name": "cyclonedx-library",
+          "group": "@cyclonedx",
+          "version": "8.0.0",
+          "author": "Jan Kowalleck",
+          "description": "Core functionality of CycloneDX for JavaScript (Node.js or WebBrowser).",
+          "licenses": [
+            {
+              "license": {
+                "id": "Apache-2.0"
+              }
+            }
+          ],
+          "externalReferences": [
+            {
+              "url": "git+https://github.com/CycloneDX/cyclonedx-javascript-library.git",
+              "type": "vcs",
+              "comment": "as detected from PackageJson property \"repository.url\""
+            },
+            {
+              "url": "https://github.com/CycloneDX/cyclonedx-javascript-library#readme",
+              "type": "website",
+              "comment": "as detected from PackageJson property \"homepage\""
+            },
+            {
+              "url": "https://github.com/CycloneDX/cyclonedx-javascript-library/issues",
+              "type": "issue-tracker",
+              "comment": "as detected from PackageJson property \"bugs.url\""
+            }
+          ]
+        }
+      ]
+    },
     "component": {
       "type": "application",
       "name": "redis-rest-proxy",
@@ -66,11 +89,12 @@
       "licenses": [
         {
           "license": {
-            "id": "MIT"
+            "id": "MIT",
+            "acknowledgement": "declared"
           }
         }
       ],
-      "purl": "pkg:npm/redis-rest-proxy@0.0.3?vcs_url=git%2Bhttps%3A//github.com/sseide/redis-rest-proxy.git",
+      "purl": "pkg:npm/redis-rest-proxy@0.0.3?vcs_url=git%2Bhttps%3A%2F%2Fgithub.com%2Fsseide%2Fredis-rest-proxy.git",
       "externalReferences": [
         {
           "url": "git+https://github.com/sseide/redis-rest-proxy.git",
@@ -107,7 +131,8 @@
       "licenses": [
         {
           "license": {
-            "id": "Apache-2.0"
+            "id": "Apache-2.0",
+            "acknowledgement": "declared"
           }
         }
       ],
@@ -161,7 +186,8 @@
       "licenses": [
         {
           "license": {
-            "id": "MIT"
+            "id": "MIT",
+            "acknowledgement": "declared"
           }
         }
       ],
@@ -211,7 +237,8 @@
       "licenses": [
         {
           "license": {
-            "id": "MIT"
+            "id": "MIT",
+            "acknowledgement": "declared"
           }
         }
       ],
@@ -254,18 +281,19 @@
     {
       "type": "library",
       "name": "express",
-      "version": "4.21.0",
-      "bom-ref": "express@4.21.0",
+      "version": "4.21.2",
+      "bom-ref": "express@4.21.2",
       "author": "TJ Holowaychuk",
       "description": "Fast, unopinionated, minimalist web framework",
       "licenses": [
         {
           "license": {
-            "id": "MIT"
+            "id": "MIT",
+            "acknowledgement": "declared"
           }
         }
       ],
-      "purl": "pkg:npm/express@4.21.0",
+      "purl": "pkg:npm/express@4.21.2",
       "externalReferences": [
         {
           "url": "git+https://github.com/expressjs/express.git",
@@ -283,12 +311,12 @@
           "comment": "as detected from PackageJson property \"bugs.url\""
         },
         {
-          "url": "https://registry.npmjs.org/express/-/express-4.21.0.tgz",
+          "url": "https://registry.npmjs.org/express/-/express-4.21.2.tgz",
           "type": "distribution",
           "hashes": [
             {
               "alg": "SHA-512",
-              "content": "56a70d19c8ff21de594f52d9fdc7e2862dedb539fe3499a4962d9e6400e2823ab6f6a4e55a2fe1010e37b7f54b3eaf3e517d3a142131dc1c8e61eb7a6456e59e"
+              "content": "dbc1ea80c6409a28750b3b7d9f2eeaafa7a4daa75d17815c95b333c21091101e8e15f1fead7027b8d0b0a35ff016faed6e0b100dbe2449b5fd75ef6515bad79c"
             }
           ],
           "comment": "as detected from npm-ls property \"resolved\" and property \"integrity\""
@@ -305,13 +333,14 @@
           "type": "library",
           "name": "debug",
           "version": "2.6.9",
-          "bom-ref": "express@4.21.0|debug@2.6.9",
+          "bom-ref": "express@4.21.2|debug@2.6.9",
           "author": "TJ Holowaychuk",
           "description": "small debugging utility",
           "licenses": [
             {
               "license": {
-                "id": "MIT"
+                "id": "MIT",
+                "acknowledgement": "declared"
               }
             }
           ],
@@ -355,12 +384,13 @@
           "type": "library",
           "name": "ms",
           "version": "2.0.0",
-          "bom-ref": "express@4.21.0|ms@2.0.0",
+          "bom-ref": "express@4.21.2|ms@2.0.0",
           "description": "Tiny milisecond conversion utility",
           "licenses": [
             {
               "license": {
-                "id": "MIT"
+                "id": "MIT",
+                "acknowledgement": "declared"
               }
             }
           ],
@@ -411,7 +441,8 @@
       "licenses": [
         {
           "license": {
-            "id": "MIT"
+            "id": "MIT",
+            "acknowledgement": "declared"
           }
         }
       ],
@@ -460,7 +491,8 @@
       "licenses": [
         {
           "license": {
-            "id": "MIT"
+            "id": "MIT",
+            "acknowledgement": "declared"
           }
         }
       ],
@@ -509,7 +541,8 @@
       "licenses": [
         {
           "license": {
-            "id": "MIT"
+            "id": "MIT",
+            "acknowledgement": "declared"
           }
         }
       ],
@@ -558,7 +591,8 @@
       "licenses": [
         {
           "license": {
-            "id": "MIT"
+            "id": "MIT",
+            "acknowledgement": "declared"
           }
         }
       ],
@@ -608,7 +642,8 @@
       "licenses": [
         {
           "license": {
-            "id": "MIT"
+            "id": "MIT",
+            "acknowledgement": "declared"
           }
         }
       ],
@@ -657,7 +692,8 @@
       "licenses": [
         {
           "license": {
-            "id": "MIT"
+            "id": "MIT",
+            "acknowledgement": "declared"
           }
         }
       ],
@@ -707,7 +743,8 @@
           "licenses": [
             {
               "license": {
-                "id": "MIT"
+                "id": "MIT",
+                "acknowledgement": "declared"
               }
             }
           ],
@@ -756,7 +793,8 @@
           "licenses": [
             {
               "license": {
-                "id": "MIT"
+                "id": "MIT",
+                "acknowledgement": "declared"
               }
             }
           ],
@@ -808,7 +846,8 @@
       "licenses": [
         {
           "license": {
-            "id": "MIT"
+            "id": "MIT",
+            "acknowledgement": "declared"
           }
         }
       ],
@@ -858,7 +897,8 @@
       "licenses": [
         {
           "license": {
-            "id": "MIT"
+            "id": "MIT",
+            "acknowledgement": "declared"
           }
         }
       ],
@@ -908,7 +948,8 @@
       "licenses": [
         {
           "license": {
-            "id": "MIT"
+            "id": "MIT",
+            "acknowledgement": "declared"
           }
         }
       ],
@@ -958,7 +999,8 @@
       "licenses": [
         {
           "license": {
-            "id": "MIT"
+            "id": "MIT",
+            "acknowledgement": "declared"
           }
         }
       ],
@@ -1008,7 +1050,8 @@
       "licenses": [
         {
           "license": {
-            "id": "MIT"
+            "id": "MIT",
+            "acknowledgement": "declared"
           }
         }
       ],
@@ -1058,7 +1101,8 @@
       "licenses": [
         {
           "license": {
-            "id": "MIT"
+            "id": "MIT",
+            "acknowledgement": "declared"
           }
         }
       ],
@@ -1108,7 +1152,8 @@
       "licenses": [
         {
           "license": {
-            "id": "MIT"
+            "id": "MIT",
+            "acknowledgement": "declared"
           }
         }
       ],
@@ -1157,7 +1202,8 @@
       "licenses": [
         {
           "license": {
-            "id": "MIT"
+            "id": "MIT",
+            "acknowledgement": "declared"
           }
         }
       ],
@@ -1206,7 +1252,8 @@
       "licenses": [
         {
           "license": {
-            "id": "BSD-3-Clause"
+            "id": "BSD-3-Clause",
+            "acknowledgement": "declared"
           }
         }
       ],
@@ -1256,7 +1303,8 @@
       "licenses": [
         {
           "license": {
-            "id": "MIT"
+            "id": "MIT",
+            "acknowledgement": "declared"
           }
         }
       ],
@@ -1306,7 +1354,8 @@
       "licenses": [
         {
           "license": {
-            "id": "MIT"
+            "id": "MIT",
+            "acknowledgement": "declared"
           }
         }
       ],
@@ -1355,7 +1404,8 @@
       "licenses": [
         {
           "license": {
-            "id": "MIT"
+            "id": "MIT",
+            "acknowledgement": "declared"
           }
         }
       ],
@@ -1405,7 +1455,8 @@
       "licenses": [
         {
           "license": {
-            "id": "MIT"
+            "id": "MIT",
+            "acknowledgement": "declared"
           }
         }
       ],
@@ -1455,7 +1506,8 @@
       "licenses": [
         {
           "license": {
-            "id": "MIT"
+            "id": "MIT",
+            "acknowledgement": "declared"
           }
         }
       ],
@@ -1505,7 +1557,8 @@
       "licenses": [
         {
           "license": {
-            "id": "MIT"
+            "id": "MIT",
+            "acknowledgement": "declared"
           }
         }
       ],
@@ -1548,18 +1601,19 @@
     {
       "type": "library",
       "name": "cookie",
-      "version": "0.6.0",
-      "bom-ref": "cookie@0.6.0",
+      "version": "0.7.1",
+      "bom-ref": "cookie@0.7.1",
       "author": "Roman Shtylman",
       "description": "HTTP server cookie parsing and serialization",
       "licenses": [
         {
           "license": {
-            "id": "MIT"
+            "id": "MIT",
+            "acknowledgement": "declared"
           }
         }
       ],
-      "purl": "pkg:npm/cookie@0.6.0",
+      "purl": "pkg:npm/cookie@0.7.1",
       "externalReferences": [
         {
           "url": "git+https://github.com/jshttp/cookie.git",
@@ -1577,12 +1631,12 @@
           "comment": "as detected from PackageJson property \"bugs.url\""
         },
         {
-          "url": "https://registry.npmjs.org/cookie/-/cookie-0.6.0.tgz",
+          "url": "https://registry.npmjs.org/cookie/-/cookie-0.7.1.tgz",
           "type": "distribution",
           "hashes": [
             {
               "alg": "SHA-512",
-              "content": "53bd5cc936a6ba1d4244d09fa4663ab68dbc971bcdc0f1b81aecff1158e07f7266cefd2f943a756ad4fd792e5d0e33181ee7291db5a7b3a2f07f704acfab2f77"
+              "content": "e839c89e9c7b489d802b7f824d413f64cd2f59351ba1909e831842db1888c9d1d1f6336e4c001206b7c4a4786218e670fe75f9d5b1ede98425f23b06a38cbfd3"
             }
           ],
           "comment": "as detected from npm-ls property \"resolved\" and property \"integrity\""
@@ -1604,7 +1658,8 @@
       "licenses": [
         {
           "license": {
-            "id": "MIT"
+            "id": "MIT",
+            "acknowledgement": "declared"
           }
         }
       ],
@@ -1653,7 +1708,8 @@
       "licenses": [
         {
           "license": {
-            "id": "MIT"
+            "id": "MIT",
+            "acknowledgement": "declared"
           }
         }
       ],
@@ -1702,7 +1758,8 @@
       "licenses": [
         {
           "license": {
-            "id": "MIT"
+            "id": "MIT",
+            "acknowledgement": "declared"
           }
         }
       ],
@@ -1752,7 +1809,8 @@
       "licenses": [
         {
           "license": {
-            "id": "MIT"
+            "id": "MIT",
+            "acknowledgement": "declared"
           }
         }
       ],
@@ -1802,7 +1860,8 @@
           "licenses": [
             {
               "license": {
-                "id": "MIT"
+                "id": "MIT",
+                "acknowledgement": "declared"
               }
             }
           ],
@@ -1851,7 +1910,8 @@
           "licenses": [
             {
               "license": {
-                "id": "MIT"
+                "id": "MIT",
+                "acknowledgement": "declared"
               }
             }
           ],
@@ -1902,7 +1962,8 @@
       "licenses": [
         {
           "license": {
-            "id": "MIT"
+            "id": "MIT",
+            "acknowledgement": "declared"
           }
         }
       ],
@@ -1951,7 +2012,8 @@
       "licenses": [
         {
           "license": {
-            "id": "MIT"
+            "id": "MIT",
+            "acknowledgement": "declared"
           }
         }
       ],
@@ -2001,7 +2063,8 @@
       "licenses": [
         {
           "license": {
-            "id": "MIT"
+            "id": "MIT",
+            "acknowledgement": "declared"
           }
         }
       ],
@@ -2050,7 +2113,8 @@
       "licenses": [
         {
           "license": {
-            "id": "ISC"
+            "id": "ISC",
+            "acknowledgement": "declared"
           }
         }
       ],
@@ -2100,7 +2164,8 @@
       "licenses": [
         {
           "license": {
-            "id": "ISC"
+            "id": "ISC",
+            "acknowledgement": "declared"
           }
         }
       ],
@@ -2150,7 +2215,8 @@
       "licenses": [
         {
           "license": {
-            "id": "MIT"
+            "id": "MIT",
+            "acknowledgement": "declared"
           }
         }
       ],
@@ -2200,7 +2266,8 @@
       "licenses": [
         {
           "license": {
-            "id": "MIT"
+            "id": "MIT",
+            "acknowledgement": "declared"
           }
         }
       ],
@@ -2249,7 +2316,8 @@
       "licenses": [
         {
           "license": {
-            "id": "MIT"
+            "id": "MIT",
+            "acknowledgement": "declared"
           }
         }
       ],
@@ -2299,7 +2367,8 @@
       "licenses": [
         {
           "license": {
-            "id": "MIT"
+            "id": "MIT",
+            "acknowledgement": "declared"
           }
         }
       ],
@@ -2342,17 +2411,18 @@
     {
       "type": "library",
       "name": "path-to-regexp",
-      "version": "0.1.10",
-      "bom-ref": "path-to-regexp@0.1.10",
+      "version": "0.1.12",
+      "bom-ref": "path-to-regexp@0.1.12",
       "description": "Express style path to RegExp utility",
       "licenses": [
         {
           "license": {
-            "id": "MIT"
+            "id": "MIT",
+            "acknowledgement": "declared"
           }
         }
       ],
-      "purl": "pkg:npm/path-to-regexp@0.1.10",
+      "purl": "pkg:npm/path-to-regexp@0.1.12",
       "externalReferences": [
         {
           "url": "git+https://github.com/pillarjs/path-to-regexp.git",
@@ -2370,12 +2440,12 @@
           "comment": "as detected from PackageJson property \"bugs.url\""
         },
         {
-          "url": "https://registry.npmjs.org/path-to-regexp/-/path-to-regexp-0.1.10.tgz",
+          "url": "https://registry.npmjs.org/path-to-regexp/-/path-to-regexp-0.1.12.tgz",
           "type": "distribution",
           "hashes": [
             {
               "alg": "SHA-512",
-              "content": "ee57fba9c42275392ed06bb76033dcf03275abb38eb9c7dafc14ac2308ee879e9553b91ab45bee33c8542df930077167b3faec545ecfc0f295c35b25e4a412f7"
+              "content": "440d468d454c9ef605c6eaa8beb12a668c715b935466a6f02ad633fd3b7b9d77ab9342db2db9509abb2075e3b15794851dfd140e08234bf6d278e670b75a6611"
             }
           ],
           "comment": "as detected from npm-ls property \"resolved\" and property \"integrity\""
@@ -2398,7 +2468,8 @@
       "licenses": [
         {
           "license": {
-            "id": "MIT"
+            "id": "MIT",
+            "acknowledgement": "declared"
           }
         }
       ],
@@ -2447,7 +2518,8 @@
       "licenses": [
         {
           "license": {
-            "id": "MIT"
+            "id": "MIT",
+            "acknowledgement": "declared"
           }
         }
       ],
@@ -2497,7 +2569,8 @@
       "licenses": [
         {
           "license": {
-            "id": "MIT"
+            "id": "MIT",
+            "acknowledgement": "declared"
           }
         }
       ],
@@ -2547,7 +2620,8 @@
       "licenses": [
         {
           "license": {
-            "id": "MIT"
+            "id": "MIT",
+            "acknowledgement": "declared"
           }
         }
       ],
@@ -2597,7 +2671,8 @@
       "licenses": [
         {
           "license": {
-            "id": "MIT"
+            "id": "MIT",
+            "acknowledgement": "declared"
           }
         }
       ],
@@ -2647,7 +2722,8 @@
       "licenses": [
         {
           "license": {
-            "id": "MIT"
+            "id": "MIT",
+            "acknowledgement": "declared"
           }
         }
       ],
@@ -2697,7 +2773,8 @@
       "licenses": [
         {
           "license": {
-            "id": "MIT"
+            "id": "MIT",
+            "acknowledgement": "declared"
           }
         }
       ],
@@ -2747,7 +2824,8 @@
       "licenses": [
         {
           "license": {
-            "id": "MIT"
+            "id": "MIT",
+            "acknowledgement": "declared"
           }
         }
       ],
@@ -2797,7 +2875,8 @@
       "licenses": [
         {
           "license": {
-            "id": "MIT"
+            "id": "MIT",
+            "acknowledgement": "declared"
           }
         }
       ],
@@ -2847,7 +2926,8 @@
       "licenses": [
         {
           "license": {
-            "id": "MIT"
+            "id": "MIT",
+            "acknowledgement": "declared"
           }
         }
       ],
@@ -2897,7 +2977,8 @@
       "licenses": [
         {
           "license": {
-            "id": "MIT"
+            "id": "MIT",
+            "acknowledgement": "declared"
           }
         }
       ],
@@ -2947,7 +3028,8 @@
       "licenses": [
         {
           "license": {
-            "id": "MIT"
+            "id": "MIT",
+            "acknowledgement": "declared"
           }
         }
       ],
@@ -2997,7 +3079,8 @@
       "licenses": [
         {
           "license": {
-            "id": "MIT"
+            "id": "MIT",
+            "acknowledgement": "declared"
           }
         }
       ],
@@ -3047,7 +3130,8 @@
       "licenses": [
         {
           "license": {
-            "id": "MIT"
+            "id": "MIT",
+            "acknowledgement": "declared"
           }
         }
       ],
@@ -3097,7 +3181,8 @@
       "licenses": [
         {
           "license": {
-            "id": "MIT"
+            "id": "MIT",
+            "acknowledgement": "declared"
           }
         }
       ],
@@ -3147,7 +3232,8 @@
       "licenses": [
         {
           "license": {
-            "id": "MIT"
+            "id": "MIT",
+            "acknowledgement": "declared"
           }
         }
       ],
@@ -3197,7 +3283,8 @@
       "licenses": [
         {
           "license": {
-            "id": "MIT"
+            "id": "MIT",
+            "acknowledgement": "declared"
           }
         }
       ],
@@ -3247,7 +3334,8 @@
       "licenses": [
         {
           "license": {
-            "id": "MIT"
+            "id": "MIT",
+            "acknowledgement": "declared"
           }
         }
       ],
@@ -3297,7 +3385,8 @@
       "licenses": [
         {
           "license": {
-            "id": "MIT"
+            "id": "MIT",
+            "acknowledgement": "declared"
           }
         }
       ],
@@ -3347,7 +3436,8 @@
           "licenses": [
             {
               "license": {
-                "id": "MIT"
+                "id": "MIT",
+                "acknowledgement": "declared"
               }
             }
           ],
@@ -3396,7 +3486,8 @@
               "licenses": [
                 {
                   "license": {
-                    "id": "MIT"
+                    "id": "MIT",
+                    "acknowledgement": "declared"
                   }
                 }
               ],
@@ -3447,7 +3538,8 @@
           "licenses": [
             {
               "license": {
-                "id": "MIT"
+                "id": "MIT",
+                "acknowledgement": "declared"
               }
             }
           ],
@@ -3486,55 +3578,6 @@
               "value": "node_modules/send/node_modules/encodeurl"
             }
           ]
-        },
-        {
-          "type": "library",
-          "name": "ms",
-          "version": "2.1.3",
-          "bom-ref": "send@0.19.0|ms@2.1.3",
-          "description": "Tiny millisecond conversion utility",
-          "licenses": [
-            {
-              "license": {
-                "id": "MIT"
-              }
-            }
-          ],
-          "purl": "pkg:npm/ms@2.1.3",
-          "externalReferences": [
-            {
-              "url": "git+https://github.com/vercel/ms.git",
-              "type": "vcs",
-              "comment": "as detected from PackageJson property \"repository.url\""
-            },
-            {
-              "url": "https://github.com/vercel/ms#readme",
-              "type": "website",
-              "comment": "as detected from PackageJson property \"homepage\""
-            },
-            {
-              "url": "https://github.com/vercel/ms/issues",
-              "type": "issue-tracker",
-              "comment": "as detected from PackageJson property \"bugs.url\""
-            },
-            {
-              "url": "https://registry.npmjs.org/ms/-/ms-2.1.3.tgz",
-              "type": "distribution",
-              "hashes": [
-                {
-                  "alg": "SHA-512",
-                  "content": "e85973b9b4cb646dc9d9afcd542025784863ceae68c601f268253dc985ef70bb2fa1568726afece715c8ebf5d73fab73ed1f7100eb479d23bfb57b45dd645394"
-                }
-              ],
-              "comment": "as detected from npm-ls property \"resolved\" and property \"integrity\""
-            }
-          ],
-          "properties": [
-            {
-              "name": "cdx:npm:package:path",
-              "value": "node_modules/send/node_modules/ms"
-            }
-          ]
         }
       ]
     },
@@ -3548,7 +3591,8 @@
       "licenses": [
         {
           "license": {
-            "id": "MIT"
+            "id": "MIT",
+            "acknowledgement": "declared"
           }
         }
       ],
@@ -3590,6 +3634,56 @@
     },
     {
       "type": "library",
+      "name": "ms",
+      "version": "2.1.3",
+      "bom-ref": "ms@2.1.3",
+      "description": "Tiny millisecond conversion utility",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT",
+            "acknowledgement": "declared"
+          }
+        }
+      ],
+      "purl": "pkg:npm/ms@2.1.3",
+      "externalReferences": [
+        {
+          "url": "git+https://github.com/vercel/ms.git",
+          "type": "vcs",
+          "comment": "as detected from PackageJson property \"repository.url\""
+        },
+        {
+          "url": "https://github.com/vercel/ms#readme",
+          "type": "website",
+          "comment": "as detected from PackageJson property \"homepage\""
+        },
+        {
+          "url": "https://github.com/vercel/ms/issues",
+          "type": "issue-tracker",
+          "comment": "as detected from PackageJson property \"bugs.url\""
+        },
+        {
+          "url": "https://registry.npmjs.org/ms/-/ms-2.1.3.tgz",
+          "type": "distribution",
+          "hashes": [
+            {
+              "alg": "SHA-512",
+              "content": "e85973b9b4cb646dc9d9afcd542025784863ceae68c601f268253dc985ef70bb2fa1568726afece715c8ebf5d73fab73ed1f7100eb479d23bfb57b45dd645394"
+            }
+          ],
+          "comment": "as detected from npm-ls property \"resolved\" and property \"integrity\""
+        }
+      ],
+      "properties": [
+        {
+          "name": "cdx:npm:package:path",
+          "value": "node_modules/ms"
+        }
+      ]
+    },
+    {
+      "type": "library",
       "name": "serve-static",
       "version": "1.16.2",
       "bom-ref": "serve-static@1.16.2",
@@ -3598,7 +3692,8 @@
       "licenses": [
         {
           "license": {
-            "id": "MIT"
+            "id": "MIT",
+            "acknowledgement": "declared"
           }
         }
       ],
@@ -3648,7 +3743,8 @@
       "licenses": [
         {
           "license": {
-            "id": "MIT"
+            "id": "MIT",
+            "acknowledgement": "declared"
           }
         }
       ],
@@ -3698,12 +3794,14 @@
       "licenses": [
         {
           "license": {
-            "id": "MIT"
+            "id": "MIT",
+            "acknowledgement": "declared"
           }
         },
         {
           "license": {
             "id": "MIT",
+            "acknowledgement": "declared",
             "url": "http://opensource.org/licenses/MIT"
           }
         }
@@ -3754,7 +3852,8 @@
       "licenses": [
         {
           "license": {
-            "id": "MIT"
+            "id": "MIT",
+            "acknowledgement": "declared"
           }
         }
       ],
@@ -3797,18 +3896,19 @@
     {
       "type": "library",
       "name": "ioredis",
-      "version": "5.4.1",
-      "bom-ref": "ioredis@5.4.1",
+      "version": "5.6.1",
+      "bom-ref": "ioredis@5.6.1",
       "author": "Zihua Li",
       "description": "A robust, performance-focused and full-featured Redis client for Node.js.",
       "licenses": [
         {
           "license": {
-            "id": "MIT"
+            "id": "MIT",
+            "acknowledgement": "declared"
           }
         }
       ],
-      "purl": "pkg:npm/ioredis@5.4.1",
+      "purl": "pkg:npm/ioredis@5.6.1",
       "externalReferences": [
         {
           "url": "git://github.com/luin/ioredis.git",
@@ -3826,12 +3926,12 @@
           "comment": "as detected from PackageJson property \"bugs.url\""
         },
         {
-          "url": "https://registry.npmjs.org/ioredis/-/ioredis-5.4.1.tgz",
+          "url": "https://registry.npmjs.org/ioredis/-/ioredis-5.6.1.tgz",
           "type": "distribution",
           "hashes": [
             {
               "alg": "SHA-512",
-              "content": "d9866cbe5ee3a2921ad6069e3e478cb5df6b01c4a338e8cfb6970b94e7aeb323be5c7d922b965c4fe502ac494f3fe5952089e1d93cde2385d6f4435a48b5551c"
+              "content": "5310b462fd58e164498864314243f485f74bd3fe7fe98bdd7ce382951809d2aa6949aae48677926ba52f90c926b340247468a6487dc892a9beea690c997eef18"
             }
           ],
           "comment": "as detected from npm-ls property \"resolved\" and property \"integrity\""
@@ -3855,7 +3955,8 @@
       "licenses": [
         {
           "license": {
-            "id": "MIT"
+            "id": "MIT",
+            "acknowledgement": "declared"
           }
         }
       ],
@@ -3905,7 +4006,8 @@
       "licenses": [
         {
           "license": {
-            "id": "Apache-2.0"
+            "id": "Apache-2.0",
+            "acknowledgement": "declared"
           }
         }
       ],
@@ -3948,18 +4050,19 @@
     {
       "type": "library",
       "name": "debug",
-      "version": "4.3.4",
-      "bom-ref": "debug@4.3.4",
+      "version": "4.4.0",
+      "bom-ref": "debug@4.4.0",
       "author": "Josh Junon",
       "description": "Lightweight debugging utility for Node.js and the browser",
       "licenses": [
         {
           "license": {
-            "id": "MIT"
+            "id": "MIT",
+            "acknowledgement": "declared"
           }
         }
       ],
-      "purl": "pkg:npm/debug@4.3.4",
+      "purl": "pkg:npm/debug@4.4.0",
       "externalReferences": [
         {
           "url": "git://github.com/debug-js/debug.git",
@@ -3977,12 +4080,12 @@
           "comment": "as detected from PackageJson property \"bugs.url\""
         },
         {
-          "url": "https://registry.npmjs.org/debug/-/debug-4.3.4.tgz",
+          "url": "https://registry.npmjs.org/debug/-/debug-4.4.0.tgz",
           "type": "distribution",
           "hashes": [
             {
               "alg": "SHA-512",
-              "content": "3d15851ee494dde0ed4093ef9cd63b25c91eb758f4b793ae3ac1733cfcec7a40f9d9997ca947c520f122b305ea22f1d61951ce817fbb1bfbc234d85e870c5f91"
+              "content": "e964d9fc8c4263f4fa0402e8647684e1cb69f719be679918fe9cd86821d115ec958688f196b9bee3acbaf0703a86bd1373012cb28c4d8831142508df3d9fd160"
             }
           ],
           "comment": "as detected from npm-ls property \"resolved\" and property \"integrity\""
@@ -3997,55 +4100,6 @@
     },
     {
       "type": "library",
-      "name": "ms",
-      "version": "2.1.2",
-      "bom-ref": "ms@2.1.2",
-      "description": "Tiny millisecond conversion utility",
-      "licenses": [
-        {
-          "license": {
-            "id": "MIT"
-          }
-        }
-      ],
-      "purl": "pkg:npm/ms@2.1.2",
-      "externalReferences": [
-        {
-          "url": "git+https://github.com/zeit/ms.git",
-          "type": "vcs",
-          "comment": "as detected from PackageJson property \"repository.url\""
-        },
-        {
-          "url": "https://github.com/zeit/ms#readme",
-          "type": "website",
-          "comment": "as detected from PackageJson property \"homepage\""
-        },
-        {
-          "url": "https://github.com/zeit/ms/issues",
-          "type": "issue-tracker",
-          "comment": "as detected from PackageJson property \"bugs.url\""
-        },
-        {
-          "url": "https://registry.npmjs.org/ms/-/ms-2.1.2.tgz",
-          "type": "distribution",
-          "hashes": [
-            {
-              "alg": "SHA-512",
-              "content": "b0690fc7e56332d980e8c5f6ee80381411442c50996784b85ea7863970afebcb53fa36f7be4fd1c9a2963f43d32b25ad98b48cd1bf9a7544c4bdbb353c4687db"
-            }
-          ],
-          "comment": "as detected from npm-ls property \"resolved\" and property \"integrity\""
-        }
-      ],
-      "properties": [
-        {
-          "name": "cdx:npm:package:path",
-          "value": "node_modules/ms"
-        }
-      ]
-    },
-    {
-      "type": "library",
       "name": "denque",
       "version": "2.1.0",
       "bom-ref": "denque@2.1.0",
@@ -4054,7 +4108,8 @@
       "licenses": [
         {
           "license": {
-            "id": "Apache-2.0"
+            "id": "Apache-2.0",
+            "acknowledgement": "declared"
           }
         }
       ],
@@ -4104,7 +4159,8 @@
       "licenses": [
         {
           "license": {
-            "id": "MIT"
+            "id": "MIT",
+            "acknowledgement": "declared"
           }
         }
       ],
@@ -4154,7 +4210,8 @@
       "licenses": [
         {
           "license": {
-            "id": "MIT"
+            "id": "MIT",
+            "acknowledgement": "declared"
           }
         }
       ],
@@ -4204,7 +4261,8 @@
       "licenses": [
         {
           "license": {
-            "id": "MIT"
+            "id": "MIT",
+            "acknowledgement": "declared"
           }
         }
       ],
@@ -4254,7 +4312,8 @@
       "licenses": [
         {
           "license": {
-            "id": "MIT"
+            "id": "MIT",
+            "acknowledgement": "declared"
           }
         }
       ],
@@ -4304,7 +4363,8 @@
       "licenses": [
         {
           "license": {
-            "id": "MIT"
+            "id": "MIT",
+            "acknowledgement": "declared"
           }
         }
       ],
@@ -4351,8 +4411,8 @@
       "dependsOn": [
         "@cyclonedx/bom@4.1.0",
         "config@3.3.12",
-        "express@4.21.0",
-        "ioredis@5.4.1"
+        "express@4.21.2",
+        "ioredis@5.6.1"
       ]
     },
     {
@@ -4368,7 +4428,7 @@
       "ref": "json5@2.2.3"
     },
     {
-      "ref": "express@4.21.0",
+      "ref": "express@4.21.2",
       "dependsOn": [
         "accepts@1.3.8",
         "array-flatten@1.1.1",
@@ -4376,8 +4436,8 @@
         "content-disposition@0.5.4",
         "content-type@1.0.5",
         "cookie-signature@1.0.6",
-        "cookie@0.6.0",
-        "express@4.21.0|debug@2.6.9",
+        "cookie@0.7.1",
+        "express@4.21.2|debug@2.6.9",
         "depd@2.0.0",
         "encodeurl@2.0.0",
         "escape-html@1.0.3",
@@ -4389,7 +4449,7 @@
         "methods@1.1.2",
         "on-finished@2.4.1",
         "parseurl@1.3.3",
-        "path-to-regexp@0.1.10",
+        "path-to-regexp@0.1.12",
         "proxy-addr@2.0.7",
         "qs@6.13.0",
         "range-parser@1.2.1",
@@ -4404,13 +4464,13 @@
       ]
     },
     {
-      "ref": "express@4.21.0|debug@2.6.9",
+      "ref": "express@4.21.2|debug@2.6.9",
       "dependsOn": [
-        "express@4.21.0|ms@2.0.0"
+        "express@4.21.2|ms@2.0.0"
       ]
     },
     {
-      "ref": "express@4.21.0|ms@2.0.0"
+      "ref": "express@4.21.2|ms@2.0.0"
     },
     {
       "ref": "accepts@1.3.8",
@@ -4535,7 +4595,7 @@
       "ref": "cookie-signature@1.0.6"
     },
     {
-      "ref": "cookie@0.6.0"
+      "ref": "cookie@0.7.1"
     },
     {
       "ref": "encodeurl@2.0.0"
@@ -4595,7 +4655,7 @@
       "ref": "ee-first@1.1.1"
     },
     {
-      "ref": "path-to-regexp@0.1.10"
+      "ref": "path-to-regexp@0.1.12"
     },
     {
       "ref": "proxy-addr@2.0.7",
@@ -4712,7 +4772,7 @@
         "fresh@0.5.2",
         "http-errors@2.0.0",
         "mime@1.6.0",
-        "send@0.19.0|ms@2.1.3",
+        "ms@2.1.3",
         "on-finished@2.4.1",
         "range-parser@1.2.1",
         "statuses@2.0.1"
@@ -4731,10 +4791,10 @@
       "ref": "send@0.19.0|encodeurl@1.0.2"
     },
     {
-      "ref": "send@0.19.0|ms@2.1.3"
+      "ref": "mime@1.6.0"
     },
     {
-      "ref": "mime@1.6.0"
+      "ref": "ms@2.1.3"
     },
     {
       "ref": "serve-static@1.16.2",
@@ -4755,11 +4815,11 @@
       "ref": "vary@1.1.2"
     },
     {
-      "ref": "ioredis@5.4.1",
+      "ref": "ioredis@5.6.1",
       "dependsOn": [
         "@ioredis/commands@1.2.0",
         "cluster-key-slot@1.1.2",
-        "debug@4.3.4",
+        "debug@4.4.0",
         "denque@2.1.0",
         "lodash.defaults@4.2.0",
         "lodash.isarguments@3.1.0",
@@ -4775,13 +4835,10 @@
       "ref": "cluster-key-slot@1.1.2"
     },
     {
-      "ref": "debug@4.3.4",
+      "ref": "debug@4.4.0",
       "dependsOn": [
-        "ms@2.1.2"
+        "ms@2.1.3"
       ]
-    },
-    {
-      "ref": "ms@2.1.2"
     },
     {
       "ref": "denque@2.1.0"
